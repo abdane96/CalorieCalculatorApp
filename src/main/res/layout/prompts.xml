@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/addProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_profile"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextDialogUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name">
+
+        <requestFocus />
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/promptInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/current_special"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/promptError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_error"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/promptError2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_error"
+        android:textColor="@android:color/holo_red_dark" />
+
+</LinearLayout>

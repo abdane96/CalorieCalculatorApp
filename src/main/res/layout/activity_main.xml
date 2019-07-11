@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.abdal.caloriescalculator.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="98dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/gender2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="jelly_bean" />
+
+    <TextView
+        android:id="@+id/WeightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/weight2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Gender" />
+
+    <EditText
+        android:id="@+id/WeightTextField"
+        android:layout_width="110dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/kilograms"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/WeightTextView"
+        app:layout_constraintTop_toBottomOf="@+id/MaleFemaleButton" />
+
+    <Spinner
+        android:id="@+id/WeightList"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toEndOf="@+id/WeightTextField"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/MaleFemaleButton"
+        android:layout_width="198dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="48dp"
+        android:orientation='horizontal'
+        app:layout_constraintStart_toEndOf="@+id/Gender"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HeightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/height2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WeightTextView" />
+
+    <EditText
+        android:id="@+id/HeightTextField"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/centimetres"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/HeightTextView"
+        app:layout_constraintTop_toBottomOf="@+id/WeightTextField" />
+
+    <Spinner
+        android:id="@+id/HeightList"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/HeightTextField"
+        app:layout_constraintTop_toBottomOf="@+id/WeightList" />
+
+    <EditText
+        android:id="@+id/HeightInchesTextField"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:ems="10"
+        android:hint="@string/inches"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/HeightList"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AgeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/age2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HeightTextView" />
+
+    <EditText
+        android:id="@+id/AgeTextField"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/age"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/AgeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/HeightTextField" />
+
+    <TextView
+        android:id="@+id/ActivityLevelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/activity_level2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AgeTextView" />
+
+    <Spinner
+        android:id="@+id/ActivityLevelList"
+        android:layout_width="200dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/LoseTextView"
+        app:layout_constraintStart_toEndOf="@+id/ActivityLevelTextView" />
+
+    <Spinner
+        android:id="@+id/weightList"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/weightToLoseTextField"
+        app:layout_constraintTop_toBottomOf="@+id/LoseTextView" />
+
+    <TextView
+        android:id="@+id/LoseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/i_want_to_lose"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ActivityLevelTextView" />
+
+    <EditText
+        android:id="@+id/weightToLoseTextField"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/kilograms"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoseTextView" />
+
+    <TextView
+        android:id="@+id/inTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/in"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/weightList"
+        app:layout_constraintTop_toTopOf="@+id/weightList" />
+
+    <Spinner
+        android:id="@+id/dateList"
+        android:layout_width="164dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="125dp"
+        app:layout_constraintStart_toEndOf="@+id/inTextView"
+        app:layout_constraintTop_toBottomOf="@+id/questionButton" />
+
+    <Button
+        android:id="@+id/CalculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/calculate_calories"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightList" />
+
+    <RelativeLayout
+        android:layout_width="95dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/no_profiles"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:elevation="100dp"
+            android:text="@string/plus"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/addProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignEnd="@+id/no_profiles"
+            android:layout_alignRight="@+id/no_profiles"
+            android:layout_alignTop="@+id/no_profiles"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/circle" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/questionButton"
+        android:layout_width="39dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HeightList"
+        app:srcCompat="@drawable/blue_question_mark" />
+
+</android.support.constraint.ConstraintLayout>
